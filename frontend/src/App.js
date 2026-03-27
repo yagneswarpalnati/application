@@ -16,7 +16,7 @@ function App() {
 
   return (
     <div style={{ textAlign: "center", marginTop: "50px" }}>
-      <h1>Backend Response</h1>
+      <h1>Backend</h1>
       <h1>{message}</h1>
       <h2>{meet}</h2>
       <h1>Combined docker compose file</h1>
