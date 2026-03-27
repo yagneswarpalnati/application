@@ -3,7 +3,7 @@ name: Build and Push Multi-Service Images
 on:
   push:
     branches:
-      - master
+      - main
 
 permissions:
   contents: write
