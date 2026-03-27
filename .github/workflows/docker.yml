@@ -65,7 +65,7 @@ jobs:
       - name: Build Backend Image
         uses: docker/build-push-action@v5
         with:
-          context: ./python-image
+          context: ./backend
           push: true
           tags: |
             ${{ vars.DOCKER_USERNAME }}/backend:${{ steps.increment.outputs.new_version }}
@@ -75,7 +75,7 @@ jobs:
       - name: Build Frontend Image
         uses: docker/build-push-action@v5
         with:
-          context: ./nextjs-docker
+          context: ./frontend
           push: true
           tags: |
             ${{ vars.DOCKER_USERNAME }}/frontend:${{ steps.increment.outputs.new_version }}
